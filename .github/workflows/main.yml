@@ -30,5 +30,5 @@ jobs:
      uses: docker/build-push-action@v2
      with:
           push: true
-          tags: alm1ktur/djangoapp:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/djangoapp:latest
           file: Dockerfile
